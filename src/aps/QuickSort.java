@@ -18,29 +18,29 @@ public class QuickSort {
             Pivo = separar(lista, inicio, fim);
             quicksort(lista, inicio, Pivo - 1);
             quicksort(lista, Pivo + 1, fim);
-//            System.out.println(lista);
+            System.out.println(lista); //Para printar o passo a passo da ordenacao
         }
        
        return lista;
    }
     public int separar(List lista, int inicio, int fim)
     {
-        double pivo = (double) lista.get(fim);
+        int pivo = (int) lista.get(fim);
         int i = inicio - 1;
-        double troca;
+        int troca;
         
         for(int j = inicio; j <= fim - 1; j++)
         {
-            if( (double) lista.get(j) <= pivo)
+            if( (int) lista.get(j) <= pivo)
             {
                 i++;
-                troca = (double) lista.get(i);
+                troca = (int) lista.get(i);
                 lista.set(i, lista.get(j));
                 lista.set(j, troca);
             }
         }
         
-        troca = (double) lista.get(fim);
+        troca = (int) lista.get(fim);
         lista.set(fim , lista.get(i + 1));
         lista.set(i + 1, troca);
         

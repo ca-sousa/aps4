@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Aps {
-    
+    //criacao das listas
     public static List listaDis() {
         Double distancia[] = new Double[]{ 0.0, 5.3, 3.6, 3.4, 8.6, 5.7, 9.1, 10.9, 8.7, 6.9, 0.0, 4.5, 5.3, 3.4, 6.6, 11.1, 9.5, 9.8, 4.4, 2.2, 0.0, 3.0, 5.9, 2.9, 8.5, 7.1, 5.4, 2.2, 4.8, 3.0,
         0.0, 9.0, 6.5, 6.4, 11.7, 9.5, 8.9, 4.1, 5.1, 7.4, 0.0, 7.3, 13.1, 12.1, 10.4, 5.2, 5.0, 2.8, 3.7, 8.7, 0.0, 5.3, 5.7, 4.0, 6.2, 10.6, 8.7, 9.6, 14.4, 6.7, 0.0, 6.3, 5.0, 11.7, 10.5, 9.1, 10.2, 
@@ -37,28 +37,29 @@ public class Aps {
                 
         System.out.println("APS - 4 SEMESTRE");
         System.out.println("-------------------------Listas---------------------------");
+        //Escolha qual lista deseja printar, a que nao quer comente.
         System.out.println("Lista de Tempo: \n" + listaTempo());
-//        System.out.println("Lista de Distancia: \n" + listaDis());
+        System.out.println("Lista de Distancia: \n" + listaDis());
     
         System.out.println("------------Bubble Sort-------------------------------");
-        System.out.println(bubble.Ordenar(listaDis()));
-        System.out.println("Tempo:" + tempo.BubbleSort(listaDis()));
+        System.out.println(bubble.Ordenar(listaTempo()));
+        System.out.println("Tempo:" + tempo.BubbleSort(listaTempo()));
         
         System.out.println("------------Insertion Sort-------------------------------");
-        System.out.println(insertion.Ordenar(listaDis()));
-        System.out.println("Tempo:" + tempo.InsertionSort(listaDis()));
+        System.out.println(insertion.Ordenar(listaTempo()));
+        System.out.println("Tempo:" + tempo.InsertionSort(listaTempo()));
 
         System.out.println("------------Quick Sort-------------------------------");
-        System.out.println(quick.Ordenar(listaDis()));
-        System.out.println("Tempo:" + tempo.QuickSort(listaDis()));
+        System.out.println(quick.Ordenar(listaTempo()));
+        System.out.println("Tempo:" + tempo.QuickSort(listaTempo()));
     
         System.out.println("------------Selection Sort-------------------------------");
-        System.out.println(selection.Ordenar(listaDis()));
-        System.out.println("Tempo:" + tempo.SelectionSort(listaDis()));
+        System.out.println(selection.Ordenar(listaTempo()));
+        System.out.println("Tempo:" + tempo.SelectionSort(listaTempo()));
        
         System.out.println("------------Merge Sort-------------------------------");
-        System.out.println(merge.sorted(listaDis()));
-        System.out.println("Tempo:" + tempo.MergeSort(listaDis()));
+        System.out.println(merge.Ordenar(listaTempo()));
+        System.out.println("Tempo:" + tempo.MergeSort(listaTempo()));
     }
     
 }

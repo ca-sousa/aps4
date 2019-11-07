@@ -48,7 +48,7 @@ public class Tempo {
         MergeSort merge = new MergeSort();
         
         double horaInicio = System.nanoTime();
-        merge.sorted(lista);
+        merge.Ordenar(lista);
         double horaParada = System.nanoTime();
         
         return (horaParada - horaInicio)/1000000;
